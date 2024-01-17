@@ -1,24 +1,39 @@
 class Crypto{
-    
+    constructor(){
+        this.price = [];
+    }
 }
 
 
 class Bitcoin extends Crypto{
     constructor(){
-        this.id = 'bitcoin'
+        super()
+        this.id = 'bitcoin',
+        this.pourcentage = 0.5
     }
 }
 
 
 class Ethereum extends Crypto{
     constructor(){
-        this.id = 'ethereum'
+        super()
+        this.id = 'ethereum',
+        this.pourcentage = 0.0002
     }
 }
 
 
 class Solana extends Crypto{
     constructor(){
-        this.id = 'solana'
+        super()
+        this.id = 'solana',
+        this.pourcentage = 0.001
     }
 }
+
+module.exports = {
+    Crypto,
+    Bitcoin,
+    Ethereum,
+    Solana,
+};
