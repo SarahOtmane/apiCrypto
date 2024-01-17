@@ -9,7 +9,7 @@ class Bitcoin extends Crypto{
     constructor(){
         super()
         this.id = 'bitcoin',
-        this.pourcentage = 0.5
+        this.pourcentage = 5
     }
 }
 
@@ -18,7 +18,7 @@ class Ethereum extends Crypto{
     constructor(){
         super()
         this.id = 'ethereum',
-        this.pourcentage = 0.0002
+        this.pourcentage = 10
     }
 }
 
@@ -27,7 +27,7 @@ class Solana extends Crypto{
     constructor(){
         super()
         this.id = 'solana',
-        this.pourcentage = 0.001
+        this.pourcentage = 7
     }
 }
 
